@@ -1,0 +1,24 @@
+人脸识别
+    哈尔（Haar）级联方法
+        Haar是专门为解决人脸识别而推出的
+        在深度学习还不流行时，Haar已可以商用
+    Haar人脸识别步骤
+        创建Haar级联器
+        导入图片并将其灰度化
+        调用detectMultiScale方法进行人脸识别
+    Haar人脸识别API
+        detectMultiScale(img,
+                        double scaleFactor = 1.1,
+                        int minNeighbors = 3,
+                        ...)
+    深度学习方法（DNN）
+车牌识别的具体步骤
+    通过Haar定位车牌的大体位置
+    对车牌进行预处理
+        对车牌进行二值化处理
+        进行形态学处理
+        滤波去除噪点
+        缩放
+    调用tesseract进行文字识别
+        Tesseract brew install tesseract tesseract-lang
+        pip3 install pytesseract
